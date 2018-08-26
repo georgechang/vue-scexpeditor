@@ -1,7 +1,19 @@
 {
+  "name": "vue-scexpeditor",
+  "description": "A Vue plugin to support Vue components in Sitecore Experience Editor.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [
+    "sitecore",
+    "vue",
+    "vuejs",
+    "experience",
+    "editor"
+  ],
+  "author": "George Chang",
   "scripts": {
-    "build": "webpack -d --watch --progress --colors",
-    "publish": "webpack -p --progress --colors"
+    "dev": "webpack -d --watch --progress --colors --config build/webpack.dev.config.js",
+    "build": "webpack -p --progress --colors --config build/webpack.prod.config.js"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -10,6 +22,7 @@
     "vue": "^2.5.17",
     "vue-cli": "^2.9.6",
     "webpack": "^4.17.1",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.1.0",
+    "webpack-merge": "^4.1.4"
   }
 }
